@@ -1,0 +1,51 @@
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/searchdata" method="post">Search Page</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Result</li>
+    </ol>
+</nav>
+
+
+<div class="row ">
+
+    <div class="col-13  d-flex justify-content-center">
+        <h1>Result</h1>
+
+    </div>
+</div>
+
+
+
+<div class="row ">
+
+    <div class="col-13  d-flex justify-content-center">
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Roll Number</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Date Of Birth</th>
+                    <th scope="col">Score</th>
+                    
+
+                </tr>
+            </thead>
+            <tbody>
+
+                {{#each rows}}
+
+
+                <tr>
+                    <th scope="row">{{this.rollno}}</th>
+                    <td>{{this.name}}</td>
+                    <td>{{this.dob}}</td>
+
+                    <td>{{this.score}}</td>
+                    
+                </tr>
+
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div>
