@@ -9,7 +9,7 @@ require('dotenv').config();
 
 const app = express();
 
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 //parshing middleware
 //parse appliction 
